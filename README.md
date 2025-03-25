@@ -6,6 +6,6 @@ This is simple Product E-commerce website with the help of html, css and javascr
 
 # Code to Run Command
 
-1.For starting json serve used
+1. For starting json serve used
 json-server --watch db.json
-2.Then open with live server to run html code.
+2. Then open with live server to run html code.
