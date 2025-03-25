@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <div class="main-container">
+      <!-- Header -->
+      <div class="cart-container">
+        <i class="fa-solid fa-x"></i>
+        <article class="sub-cart-container">
+          <h1>Cart Items :</h1>
+          <hr />
+          <div class="list-of-cart-items"></div>
+          <hr>
+          <h2>Total :</h2>
+        </article>
+      </div>
+
+      <section id="header">
+        <article>
+          <ul class="list1">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#display-products">Products</a></li>
+            <li><a href="#log-in-sign-in-form" class="sup">Signup</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#footer">About Us</a></li>
+          </ul>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </article>
+      </section>
+
+      <!-- Products -->
+      <section id="display-products">
+        <h1 class="list">Product List :</h1>
+        <article class="sub-products"></article>
+      </section>
+
+      <!-- form -->
+      <section id="log-in-sign-in-form">
+        <article>
+          <!-- Sign up form -->
+          <form class="reg-form">
+            <h1>Sign Up</h1>
+            <hr />
+            <input
+              type="number"
+              name="id"
+              id="id"
+              placeholder="Enter ID"
+              required
+            />
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Username"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+              required
+            />
+            <input
+              type="text"
+              name="cPassword"
+              id="cPassword"
+              placeholder="Enter Confirm Password"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter Phone No"
+            />
+            <span>Already register ? <b class="login">Log In</b> </span>
+            <button type="submit" class="sign-up">Sign Up</button>
+          </form>
+
+          <!-- Login form -->
+          <form class="login-form">
+            <h1>Log In</h1>
+            <hr />
+            <input
+              type="text"
+              name="username"
+              id="usernameLogin"
+              placeholder="Enter Username"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="passwordLogin"
+              placeholder="Enter Password"
+              required
+            />
+            <span>Create new Account ? <b class="signup">Sign Up</b> </span>
+            <button type="submit" class="log-in">Log In</button>
+          </form>
+        </article>
+      </section>
+
+      <!-- blogs -->
+      <section id="blogs"></section>
+
+      <!-- footer -->
+      <section id="footer"></section>
+    </div>
+    <script src="./App.js"></script>
+  </body>
+</html>
